@@ -10863,6 +10863,7 @@ GameObject:
   - component: {fileID: 639518885}
   - component: {fileID: 639518884}
   - component: {fileID: 639518886}
+  - component: {fileID: 639518887}
   m_Layer: 0
   m_Name: Script
   m_TagString: Untagged
@@ -10912,6 +10913,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   music: {fileID: 1961535969}
   mute: {fileID: 417544527}
+--- !u!114 &639518887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639518883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: febcba883c212324ebdea6ac7cb447fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comp: {fileID: 0}
+  stu: {fileID: 0}
+  baz: {fileID: 0}
+  hou: {fileID: 0}
+  build: {fileID: 0}
 --- !u!1 &674939515
 GameObject:
   m_ObjectHideFlags: 0
