@@ -9,30 +9,30 @@ public class click : MonoBehaviour {
 	public Button picklebutton;
 	public Image face;
 	public Sprite opened, closed;
-	public bool photo;
+
 	public Text falsepromisescore;
 	public Text students;
 	public Text lecturers;
 	public Text buildings;
 	public Text rooms;
 	public Text computers;
-	public float falsepromises;
-	public int increase;
-	private float now = 1f; 
-	private float score = 0; 
-	public float scoreWaitTime;
-	float countTime;
-	public float student;
-	public float timething;
-	public float mmorty;
-	public float lect;
-	public float rrooms;
-	public float build;
-	public float stunumber;
-	public float comnumbers;
-	public float roomumbers;
-	public float lectnumbers;
-	public float buildingnumbers;
+	public int falsepromises;
+	
+
+
+	public int scoreWaitTime;
+	int countTime;
+	public int student;
+	public int timething;
+	public int mmorty;
+	public int lect;
+	public int rrooms;
+	public int build;
+	public int stunumber;
+	public int comnumbers;
+	public int roomumbers;
+	public int lectnumbers;
+	public int buildingnumbers;
 	public ParticleSystem compart, stupart, baspart, roompar, buspart;
 
 	bool updates = false;
@@ -43,7 +43,7 @@ public class click : MonoBehaviour {
 		picklebutton.onClick.AddListener(TaskOnClick);
 		
 		falsepromises = 0;
-		increase = 1;
+		
 		Text txt = falsepromisescore.GetComponent<Text> ();
 
 		student = 15;
@@ -51,7 +51,8 @@ public class click : MonoBehaviour {
 		lect = 1100;
 		rrooms = 1200;
 		build = 130000;
-		timething = 0.1f;
+		timething = 0;
+		
 	}
 	
 	// Update is called once per frame
@@ -59,10 +60,7 @@ public class click : MonoBehaviour {
 		
 
 		//		InvokeRepeating ("AddToScore", 1.0f, 1.0f);
-		if (Time.time-countTime >= scoreWaitTime && updates == true  ) {
-			StartCoroutine ("AddToScore");
-			countTime = Time.time;
-		}
+		
 
 		
 	}
@@ -71,7 +69,7 @@ public class click : MonoBehaviour {
 
 
 		Debug.Log(falsepromises);
-		falsepromises += 1f;
+		falsepromises += 1;
 		falsepromisescore.text = "" + falsepromises;
 		
 		if (face.sprite == closed)
@@ -88,11 +86,13 @@ public class click : MonoBehaviour {
 
 	void GoDown ()
 	{
-		if (falsepromises >= student) {
+		if (falsepromises >= student)
+		{
+			StartCoroutine(AddToScore());
 			student += 3;
 			updates = true;
 			falsepromises -= student;
-			timething += 0.01f;
+			timething += 1;
 			stunumber += 1;
 			students.text = "" + stunumber;
 			stupart.Play();
@@ -164,15 +164,12 @@ public class click : MonoBehaviour {
 	}
 
 	IEnumerator AddToScore(){
-		//		now += Time.deltaTime;
-		if (updates == true) {
+	
+		
 			yield return new WaitForSeconds (1);
-			//		if (now >=1f) {
-			falsepromises = falsepromises + timething;
-			falsepromisescore.text = "" + falsepromises;
-		}
-		//			now -= 1f;
-		//		}
+			falsepromises = falsepromises += timething;
+		
+		
 
 
 	}
