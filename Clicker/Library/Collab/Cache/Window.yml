@@ -17,8 +17,9 @@ MonoBehaviour:
     - Assets/MainScene.unity
     - Assets/acapelabox_1207579_22k.wav
     - Assets/acapelabox_1207579_22k.wav.meta
+    - Assets/click.cs
     - 
-    m_Values: 01010101
+    m_Values: 0000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

@@ -164,15 +164,14 @@ public class click : MonoBehaviour {
 	}
 
 	IEnumerator AddToScore(){
-		//		now += Time.deltaTime;
+
 		if (updates == true) {
 			yield return new WaitForSeconds (1);
-			//		if (now >=1f) {
-			falsepromises = falsepromises + timething;
-			falsepromisescore.text = "" + falsepromises;
+	
+			falsepromises += timething;
+			
 		}
-		//			now -= 1f;
-		//		}
+		
 
 
 	}
