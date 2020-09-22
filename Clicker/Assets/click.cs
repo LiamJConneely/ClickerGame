@@ -91,7 +91,7 @@ public class click : MonoBehaviour {
 		if (falsepromises >= student) {
 			student += 3;
 			updates = true;
-			falsepromises -= 15;
+			falsepromises -= student;
 			timething += 0.01f;
 			stunumber += 1;
 			students.text = "" + stunumber;
@@ -113,7 +113,7 @@ public class click : MonoBehaviour {
 			comnumbers += 1;
 			computers.text = " " + comnumbers;
 			compart.Play();
-			
+			updates = true;
 		}
 
 
@@ -127,6 +127,7 @@ public class click : MonoBehaviour {
 			lectnumbers += 1;
 			lecturers.text = " " + lectnumbers;
 			baspart.Play();
+			updates = true;
 		}
 
 
@@ -140,6 +141,7 @@ public class click : MonoBehaviour {
 			roomumbers += 1;
 			roompar.Play();
 			rooms.text = " " + roomumbers;
+			updates = true;
 
 		}
 
@@ -154,6 +156,7 @@ public class click : MonoBehaviour {
 			buildingnumbers += 1;
 			buspart.Play();
 			buildings.text = " " + buildingnumbers;
+			updates = true;
 
 		}
 
