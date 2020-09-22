@@ -164,7 +164,7 @@ public class click : MonoBehaviour {
 	}
 
 	IEnumerator AddToScore(){
-<<<<<<< HEAD
+
 
 		if (updates == true) {
 			yield return new WaitForSeconds (1);
@@ -172,13 +172,10 @@ public class click : MonoBehaviour {
 			falsepromises += timething;
 			
 		}
-=======
+
 	
 		
-			yield return new WaitForSeconds (1);
-			falsepromises = falsepromises += timething;
 		
->>>>>>> time
 		
 
 
