@@ -28,6 +28,10 @@
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/9e/9e4630e5f6c1142fcdafa08ddcf1e42a.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/9e/9e4630e5f6c1142fcdafa08ddcf1e42a.json" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
+>>>>>>> time
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +108,11 @@
       <workItem from="1600800304860" duration="587000" />
       <workItem from="1600802124265" duration="64000" />
       <workItem from="1600802493970" duration="687000" />
+<<<<<<< HEAD
       <workItem from="1600807826975" duration="362000" />
+=======
+      <workItem from="1600804160838" duration="856000" />
+>>>>>>> time
     </task>
     <servers />
   </component>
