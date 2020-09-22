@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
+    - Assets/MainScene.unity
+    - Assets/acapelabox_1207579_22k.wav
+    - Assets/acapelabox_1207579_22k.wav.meta
     - 
-    m_Values: 01
+    m_Values: 01010101
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 
