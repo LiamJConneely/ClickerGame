@@ -88,7 +88,7 @@ public class click : MonoBehaviour {
 	{
 		if (falsepromises >= student)
 		{
-			StartCoroutine(AddToScore());
+			
 			student += 3;
 			updates = true;
 			falsepromises -= student;
@@ -96,6 +96,7 @@ public class click : MonoBehaviour {
 			stunumber += 1;
 			students.text = "" + stunumber;
 			stupart.Play();
+			StartCoroutine(AddToScore());
 			
 		}
 
@@ -164,21 +165,18 @@ public class click : MonoBehaviour {
 	}
 
 	IEnumerator AddToScore(){
-<<<<<<< HEAD
+
 
 		if (updates == true) {
 			yield return new WaitForSeconds (1);
 	
-			falsepromises += timething;
+			falsepromises = falsepromises += timething;
 			
 		}
-=======
+
 	
 		
-			yield return new WaitForSeconds (1);
-			falsepromises = falsepromises += timething;
 		
->>>>>>> time
 		
 
 
