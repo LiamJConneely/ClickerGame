@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: a5c9a4271b3de4e4f86eff7f8a1bd768
+timeCreated: 1477809339
+licenseType: Store
+TextureImporter:
+  fileIDToRecycleName: {}
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 1
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bump
